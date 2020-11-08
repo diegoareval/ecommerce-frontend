@@ -1,9 +1,11 @@
 import React from 'react'
+import Menu from './Menu'
 import  "./styles/layout.css"
 
 const Layout = ({title='', description= '', children}) => {
   return (
    <>
+        <Menu/>
    <div class="jumbotron jumbotron-billboard">
   <div class="img"></div>
     <div class="container">
