@@ -1,6 +1,5 @@
 import React from 'react'
-import "./styles/menu.css"
-import {Link, withRouter, useHistory} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 
  const isActive = (history, path) =>{
    console.log(history)
