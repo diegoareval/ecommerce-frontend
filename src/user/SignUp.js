@@ -8,12 +8,13 @@ import Axios from "axios"
 import Header from "../helpers/requestHelpers"
 
  const SignUp = () => {
+
    const { register, handleSubmit, errors } = useForm();
 
-   // aplicando builder pattern
+   // get the headers without autorization toke
    const header = new Header().setHeader().build();
  
-   // aplicando prototype  pattern
+   // get validations
    const validation = Object.create(validations);
 
    const signUp = async (user) =>{
