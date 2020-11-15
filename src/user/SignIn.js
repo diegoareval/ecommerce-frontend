@@ -12,10 +12,10 @@ import Axios from 'axios';
    // aplicando prototype  pattern
    const validation = Object.create(validations);
 
-      // get the headers without autorization toke
+      // aplying builder pattern
    const header = new Header().setHeader().build();
 
-   const signIn = (user) =>{
+   const signIn = async (user) =>{
     return await Axios.post(
 		`${API}/signin`,
 		user,
@@ -32,7 +32,7 @@ import Axios from 'axios';
    const onSubmit = data => {
      signIn(data)
    }
-   
+
   return (
     <>
   <AuthLayout>
